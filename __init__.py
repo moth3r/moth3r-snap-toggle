@@ -15,6 +15,7 @@ import bpy
 
 def main(context):
     context.scene.tool_settings.use_mesh_automerge = True
+    #bpy.context.tool_settings.double_threshold = 0.025
     if context.scene.tool_settings.snap_element != 'VERTEX':
         context.scene.tool_settings.snap_element = 'VERTEX'
         if context.active_object and context.active_object.mode == 'EDIT':
